@@ -1,1 +1,1 @@
-To serve static files to clients, the static files must generally be in a static folder within a project app. You can extend where Django looks for these files by utilizing the STATICFILES_DIRS environment variable in the settings.py file. Make a list and input the absolute path (use BASE_DIR) of the additional static directory. This can be used to point to static files saved in the project root directory.
+This repository contains small web apps I completed in order to learn the Django web framework. It also contains work involving AngularJS and the DjangoRestFramework.
