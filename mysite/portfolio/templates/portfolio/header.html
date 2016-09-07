@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yuhua's Page</title>
+    {% load staticfiles %}
+    <script src="{% static 'portfolio/js/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'portfolio/js/main.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/bootstrap-social.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/main.css' %}">
+  </head>
+  <body>
+    <header id="banner">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" style="font-size: 20px">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Yuhua's Page</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="nav1" href="/">About Me</a></li>
+            <li><a id="nav2" href="/projects/">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      {% block content %}
+      {% endblock %}
+      <a id="contact_section"></a>
+      <section id="contact">
+        <div class="row section-body">
+          <p class="lead text-center" style="font-size: 30px; color: #444444">
+            <strong>Contact / Social Media</strong>
+          </p>
+          <hr style="background-color: grey">
+          <div class="row text-center" style="padding: 30px">
+            <a href="https://www.linkedin.com/in/yuhuani" class="btn btn-social-icon btn-linkedin btn-lg">
+              <span class="fa fa-linkedin"></span>
+            </a>
+            <a href="http://www.github.com/yohoos" class="btn btn-social-icon btn-github btn-lg">
+              <span class="fa fa-github"></span>
+            </a>
+            <a href="https://www.facebook.com/yuhua.ni.5" class="btn btn-social-icon btn-facebook btn-lg">
+              <span class="fa fa-facebook"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container-fluid">
+      <div id="footer" class="row text-center">
+        <p class="lead" style="margin: 0px">
+          Thank you for visiting!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
