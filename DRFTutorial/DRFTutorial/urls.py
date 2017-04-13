@@ -19,7 +19,8 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/', include('core.urls', namespace='core')),
+    # url(r'^api/', include('core.urls', namespace='core')),
+    url(r'^api/', include('catalog.urls', namespace='catalog')),
 ]
 
 if settings.DEBUG:
