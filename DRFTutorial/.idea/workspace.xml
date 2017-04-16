@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="923af33c-51c8-464b-886f-3f98cbf1aad1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/catalog/permissions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DRFTutorial.iml" afterPath="$PROJECT_DIR$/DRFTutorial.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DRFTutorial/settings.py" afterPath="$PROJECT_DIR$/DRFTutorial/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DRFTutorial/urls.py" afterPath="$PROJECT_DIR$/DRFTutorial/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/models.py" afterPath="$PROJECT_DIR$/catalog/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/permissions.py" afterPath="$PROJECT_DIR$/catalog/permissions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/serializers.py" afterPath="$PROJECT_DIR$/catalog/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/urls.py" afterPath="$PROJECT_DIR$/catalog/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/views.py" afterPath="$PROJECT_DIR$/catalog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.txt" afterPath="$PROJECT_DIR$/../README.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,18 +29,32 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="380">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="220">
+              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -56,22 +65,10 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            <state relative-caret-position="180">
+              <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0002_auto_20170416_1507.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/migrations/0002_auto_20170416_1507.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#73#112#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/permissions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -118,6 +115,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>produc</find>
+      <find>review</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -136,15 +139,15 @@
         <option value="$PROJECT_DIR$/core/views.py" />
         <option value="$PROJECT_DIR$/core/urls.py" />
         <option value="$PROJECT_DIR$/core/serializers.py" />
-        <option value="$PROJECT_DIR$/catalog/models.py" />
-        <option value="$PROJECT_DIR$/catalog/serializers.py" />
-        <option value="$PROJECT_DIR$/catalog/urls.py" />
         <option value="$PROJECT_DIR$/catalog/migrations/0002_auto_20170416_1458.py" />
         <option value="$PROJECT_DIR$/catalog/migrations/0002_auto_20170416_1507.py" />
         <option value="$PROJECT_DIR$/DRFTutorial/settings.py" />
         <option value="$PROJECT_DIR$/DRFTutorial/urls.py" />
-        <option value="$PROJECT_DIR$/catalog/permissions.py" />
+        <option value="$PROJECT_DIR$/catalog/models.py" />
+        <option value="$PROJECT_DIR$/catalog/serializers.py" />
         <option value="$PROJECT_DIR$/catalog/views.py" />
+        <option value="$PROJECT_DIR$/catalog/urls.py" />
+        <option value="$PROJECT_DIR$/catalog/permissions.py" />
       </list>
     </option>
   </component>
@@ -760,13 +763,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/migrations/0002_auto_20170416_1458.py" />
-    <entry file="file://$PROJECT_DIR$/catalog/serializers.py">
+    <entry file="file://$PROJECT_DIR$/DRFTutorial/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="464">
+          <caret line="131" column="60" lean-forward="false" selection-start-line="131" selection-start-column="60" selection-end-line="131" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,34 +776,8 @@
         <state relative-caret-position="506">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#73#112#0" expanded="true" />
+            <element signature="e#73#112#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DRFTutorial/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="131" column="60" lean-forward="false" selection-start-line="131" selection-start-column="60" selection-end-line="131" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,21 +791,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/permissions.py">
+    <entry file="file://$PROJECT_DIR$/catalog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="220">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
