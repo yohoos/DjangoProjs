@@ -25,7 +25,7 @@ SECRET_KEY = 'x9^2+5-^h#ue_&95#_8(%n*=j)ip$20-s@j#i0xbrn+9^(9d&6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'django-env.m74mph8ukr.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'catalog.apps.CatalogConfig',
-    # 'core.apps.CoreConfig',
+    'core.apps.CoreConfig',
+    'nyc_collisions.apps.NycCollisionsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 
 USE_I18N = True
 

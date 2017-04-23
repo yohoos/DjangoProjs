@@ -1,0 +1,35 @@
+from django.db import models
+
+
+# Create your models here.
+
+class Collision(models.Model):
+    date = models.DateField()
+    time = models.TimeField()
+    borough = models.CharField(max_length=50, default='')
+    zip_code = models.IntegerField(blank=True, null=True)
+    latitude = models.FloatField(blank=True, null=True)
+    longitude = models.FloatField(blank=True, null=True)
+    location = models.CharField(max_length=50, default='')
+    on_street_name = models.CharField(max_length=32, default='')
+    cross_street_name = models.CharField(max_length=32, default='')
+    off_street_name = models.CharField(max_length=40, default='')
+    number_of_persons_injured = models.IntegerField()
+    number_of_persons_killed = models.IntegerField()
+    number_of_pedestrians_injured = models.IntegerField()
+    number_of_pedestrians_killed = models.IntegerField()
+    number_of_cyclist_injured = models.IntegerField()
+    number_of_cyclist_killed = models.IntegerField()
+    number_of_motorist_injured = models.IntegerField()
+    number_of_motorist_killed = models.IntegerField()
+    contributing_factor_vehicle_1 = models.CharField(max_length=100)
+    contributing_factor_vehicle_2 = models.CharField(max_length=100)
+    contributing_factor_vehicle_3 = models.CharField(max_length=100)
+    contributing_factor_vehicle_4 = models.CharField(max_length=100)
+    contributing_factor_vehicle_5 = models.CharField(max_length=100)
+    unique_key = models.IntegerField()
+    vehicle_type_code_1 = models.CharField(max_length=30)
+    vehicle_type_code_2 = models.CharField(max_length=30)
+    vehicle_type_code_3 = models.CharField(max_length=30)
+    vehicle_type_code_4 = models.CharField(max_length=30)
+    vehicle_type_code_5 = models.CharField(max_length=30)
