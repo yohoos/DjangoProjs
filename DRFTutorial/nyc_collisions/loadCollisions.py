@@ -1,5 +1,6 @@
 import sys, os, django
-sys.path.append('/home/yohoos/Desktop/DjangoProjs/DRFTutorial')
+
+sys.path.append('C:\\Users\\Yuhua\\Desktop\\DjangoProjs\\DRFTutorial')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DRFTutorial.settings")
 django.setup()
 
@@ -42,9 +43,9 @@ def create_collision(row):
     record.vehicle_type_code_5 = row[29]
     return record
 
-if __name__ == "__main__":
 
-    df = pd.read_csv('/home/yohoos/Desktop/datasets/NYPD_Motor_Vehicle_Collisions.csv')
+if __name__ == "__main__":
+    df = pd.read_csv('C:\\Users\\Yuhua\\Desktop\\VMs\\VMSharedFolder\\datasets\\NYPD_Motor_Vehicle_Collisions.csv')
     df = df.fillna('')
 
     # collisions = df.apply(lambda x: create_collision(x)).tolist()

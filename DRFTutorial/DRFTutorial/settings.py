@@ -33,8 +33,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'django-env.m74mph8ukr.us-east-1.elasticbeanstalk.
 INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
-    'catalog.apps.CatalogConfig',
-    'core.apps.CoreConfig',
+    # 'catalog.apps.CatalogConfig',
+    # 'core.apps.CoreConfig',
     'nyc_collisions.apps.NycCollisionsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'DRFTutorial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'C:\\Users\\Yuhua\\Desktop\\VMs\\VMSharedFolder\\collisions.db',
     }
 }
 
