@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^api/', include('core.urls', namespace='core')),
     # url(r'^api/', include('catalog.urls', namespace='catalog')),
+    url(r'^api/', include('nyc_collisions.urls', namespace='collisions')),
     url(r'^api-token-auth/', obtain_auth_token),
 ]
 

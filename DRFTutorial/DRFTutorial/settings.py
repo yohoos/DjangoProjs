@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'DRFTutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'C:\\Users\\Yuhua\\Desktop\\VMs\\VMSharedFolder\\collisions.db',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'yohoos',
+        'PASSWORD': 'magicdust50',
+        'HOST': 'localhost',
+        'POST': '',
     }
 }
 
