@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create your models here.
 
 class Collision(models.Model):
@@ -33,3 +32,4 @@ class Collision(models.Model):
     vehicle_type_code_3 = models.CharField(max_length=30)
     vehicle_type_code_4 = models.CharField(max_length=30)
     vehicle_type_code_5 = models.CharField(max_length=30)
+

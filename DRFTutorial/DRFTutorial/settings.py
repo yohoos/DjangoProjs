@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x9^2+5-^h#ue_&95#_8(%n*=j)ip$20-s@j#i0xbrn+9^(9d&6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'django-env.m74mph8ukr.us-east-1.elasticbeanstalk.com']
 
@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     # 'catalog.apps.CatalogConfig',
     # 'core.apps.CoreConfig',
-    'nyc_collisions.apps.NycCollisionsConfig',
+    # 'nyc_collisions.apps.NycCollisionsConfig',
+    'nyc_collisions_mongo.apps.NycCollisionsMongoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,14 +79,12 @@ WSGI_APPLICATION = 'DRFTutorial.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+from mongoengine import connect
+connect('nyc_collisions', host='localhost')
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'yohoos',
-        'PASSWORD': 'magicdust50',
-        'HOST': 'localhost',
-        'POST': '',
+        'ENGINE': 'django.db.backends.dummy'
     }
 }
 

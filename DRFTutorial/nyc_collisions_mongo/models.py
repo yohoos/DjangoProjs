@@ -1,0 +1,35 @@
+from mongoengine import Document, fields
+
+# Create your models here.
+
+class Collision(Document):
+    date = fields.DateTimeField()
+    time = fields.StringField()
+    borough = fields.StringField(max_length=50)
+    zip_code = fields.IntField()
+    latitude = fields.FloatField()
+    longitude = fields.FloatField()
+    location = fields.StringField(max_length=50)
+    on_street_name = fields.StringField(max_length=32)
+    cross_street_name = fields.StringField(max_length=32)
+    off_street_name = fields.StringField(max_length=40)
+    number_of_persons_injured = fields.IntField()
+    number_of_persons_killed = fields.IntField()
+    number_of_pedestrians_injured = fields.IntField()
+    number_of_pedestrians_killed = fields.IntField()
+    number_of_cyclist_injured = fields.IntField()
+    number_of_cyclist_killed = fields.IntField()
+    number_of_motorist_injured = fields.IntField()
+    number_of_motorist_killed = fields.IntField()
+    contributing_factor_vehicle_1 = fields.StringField(max_length=100)
+    contributing_factor_vehicle_2 = fields.StringField(max_length=100)
+    contributing_factor_vehicle_3 = fields.StringField(max_length=100)
+    contributing_factor_vehicle_4 = fields.StringField(max_length=100)
+    contributing_factor_vehicle_5 = fields.StringField(max_length=100)
+    unique_key = fields.IntField()
+    vehicle_type_code_1 = fields.StringField(max_length=30)
+    vehicle_type_code_2 = fields.StringField(max_length=30)
+    vehicle_type_code_3 = fields.StringField(max_length=30)
+    vehicle_type_code_4 = fields.StringField(max_length=30)
+    vehicle_type_code_5 = fields.StringField(max_length=30)
+
