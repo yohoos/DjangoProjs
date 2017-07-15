@@ -1,0 +1,23 @@
+{
+    "authors": "Dan Vanderkam <http://danvk.org/>",
+    "definitionFilename": "index.d.ts",
+    "libraryDependencies": [],
+    "moduleDependencies": [],
+    "libraryMajorVersion": "2",
+    "libraryMinorVersion": "0",
+    "libraryName": "rbush 2.0.1",
+    "typingsPackageName": "rbush",
+    "projectName": "https://github.com/mourner/rbush",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "OldUMD",
+    "globals": [],
+    "declaredModules": [
+        "rbush"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "2e2a5a9c677aa7c4e518a6d7232e46139c7ef29ba1705aa5e2e6d06080f0b400"
+}

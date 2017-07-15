@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@types/sprintf@^0.0.28",
+        "scope": "@types",
+        "escapedName": "@types%2fsprintf",
+        "name": "@types/sprintf",
+        "rawSpec": "^0.0.28",
+        "spec": ">=0.0.28 <0.0.29",
+        "type": "range"
+      },
+      "/home/yohoos/Desktop/DjangoProjs/portfolio/npm/node_modules/bokehjs"
+    ]
+  ],
+  "_from": "@types/sprintf@>=0.0.28 <0.0.29",
+  "_id": "@types/sprintf@0.0.28",
+  "_inCache": true,
+  "_location": "/@types/sprintf",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/sprintf-0.0.28.tgz_1474308801425_0.9665452735498548"
+  },
+  "_npmUser": {
+    "name": "types",
+    "email": "ts-npm-types@microsoft.com"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@types/sprintf@^0.0.28",
+    "scope": "@types",
+    "escapedName": "@types%2fsprintf",
+    "name": "@types/sprintf",
+    "rawSpec": "^0.0.28",
+    "spec": ">=0.0.28 <0.0.29",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/bokehjs"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/sprintf/-/sprintf-0.0.28.tgz",
+  "_shasum": "d8492827c13ade9bcb3c50095a828c26d5c95f20",
+  "_shrinkwrap": null,
+  "_spec": "@types/sprintf@^0.0.28",
+  "_where": "/home/yohoos/Desktop/DjangoProjs/portfolio/npm/node_modules/bokehjs",
+  "author": {
+    "name": "Carlos Ballesteros Velasco",
+    "email": "https://github.com/soywiz"
+  },
+  "dependencies": {},
+  "description": "TypeScript definitions for sprintff",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d8492827c13ade9bcb3c50095a828c26d5c95f20",
+    "tarball": "https://registry.npmjs.org/@types/sprintf/-/sprintf-0.0.28.tgz"
+  },
+  "license": "MIT",
+  "main": "",
+  "maintainers": [
+    {
+      "name": "types",
+      "email": "ryan.cavanaugh@microsoft.com"
+    }
+  ],
+  "name": "@types/sprintf",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typesPublisherContentHash": "d1299953882e94d72a2543e36058a6047b9bf2633fd3b58935419c21ae8b58ca",
+  "typings": "index.d.ts",
+  "version": "0.0.28"
+}

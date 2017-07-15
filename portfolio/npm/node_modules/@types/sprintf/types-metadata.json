@@ -1,0 +1,23 @@
+{
+    "authors": "Carlos Ballesteros Velasco <https://github.com/soywiz>",
+    "definitionFilename": "index.d.ts",
+    "libraryDependencies": [],
+    "moduleDependencies": [],
+    "libraryMajorVersion": "0",
+    "libraryMinorVersion": "0",
+    "libraryName": "sprintff",
+    "typingsPackageName": "sprintf",
+    "projectName": "https://github.com/maritz/node-sprintff",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "ProperModule",
+    "globals": [],
+    "declaredModules": [
+        "sprintf"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "d1299953882e94d72a2543e36058a6047b9bf2633fd3b58935419c21ae8b58ca"
+}

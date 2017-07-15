@@ -1,0 +1,82 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "kiwi@git+https://github.com/bokeh/kiwi.git#6941045",
+        "scope": null,
+        "escapedName": "kiwi",
+        "name": "kiwi",
+        "rawSpec": "git+https://github.com/bokeh/kiwi.git#6941045",
+        "spec": "git+https://github.com/bokeh/kiwi.git#6941045",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:bokeh/kiwi.git#6941045",
+          "sshUrl": "git+ssh://git@github.com/bokeh/kiwi.git#6941045",
+          "httpsUrl": "git+https://github.com/bokeh/kiwi.git#6941045",
+          "gitUrl": "git://github.com/bokeh/kiwi.git#6941045",
+          "shortcut": "github:bokeh/kiwi#6941045",
+          "directUrl": "https://raw.githubusercontent.com/bokeh/kiwi/6941045/package.json"
+        }
+      },
+      "/home/yohoos/Desktop/DjangoProjs/portfolio/npm/node_modules/bokehjs"
+    ]
+  ],
+  "_from": "git+https://github.com/bokeh/kiwi.git#6941045",
+  "_id": "kiwi@0.1.0",
+  "_inCache": true,
+  "_location": "/kiwi",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "kiwi@git+https://github.com/bokeh/kiwi.git#6941045",
+    "scope": null,
+    "escapedName": "kiwi",
+    "name": "kiwi",
+    "rawSpec": "git+https://github.com/bokeh/kiwi.git#6941045",
+    "spec": "git+https://github.com/bokeh/kiwi.git#6941045",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:bokeh/kiwi.git#6941045",
+      "sshUrl": "git+ssh://git@github.com/bokeh/kiwi.git#6941045",
+      "httpsUrl": "git+https://github.com/bokeh/kiwi.git#6941045",
+      "gitUrl": "git://github.com/bokeh/kiwi.git#6941045",
+      "shortcut": "github:bokeh/kiwi#6941045",
+      "directUrl": "https://raw.githubusercontent.com/bokeh/kiwi/6941045/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/bokehjs"
+  ],
+  "_resolved": "git+https://github.com/bokeh/kiwi.git#69410454eaee5f8ef3932951ccc84d28bfc385d4",
+  "_shasum": "24cb02446978fde1f3f510f59eb9b9e30da83be5",
+  "_shrinkwrap": null,
+  "_spec": "kiwi@git+https://github.com/bokeh/kiwi.git#6941045",
+  "_where": "/home/yohoos/Desktop/DjangoProjs/portfolio/npm/node_modules/bokehjs",
+  "bugs": {
+    "url": "https://github.com/nucleic/kiwi/issues"
+  },
+  "dependencies": {},
+  "description": "Kiwi is an efficient implementation of the Cassowary constraint solving algorithm.",
+  "devDependencies": {
+    "typescript": "^2.3.0"
+  },
+  "gitHead": "69410454eaee5f8ef3932951ccc84d28bfc385d4",
+  "homepage": "https://github.com/nucleic/kiwi#readme",
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "main": "build/index.js",
+  "name": "kiwi",
+  "optionalDependencies": {},
+  "readme": "Kiwi is an efficient implementation of the Cassowary constraint solving algorithm.\n",
+  "readmeFilename": "README.rst",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucleic/kiwi.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "types": "build/index.d.ts",
+  "version": "0.1.0"
+}
