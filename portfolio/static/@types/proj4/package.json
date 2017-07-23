@@ -1,0 +1,48 @@
+{
+  "_from": "@types/proj4@^2.3.2",
+  "_id": "@types/proj4@2.3.4",
+  "_inBundle": false,
+  "_integrity": "sha1-84i2AgnEy3XsIaF6S0rFWnGlhVg=",
+  "_location": "/@types/proj4",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@types/proj4@^2.3.2",
+    "name": "@types/proj4",
+    "escapedName": "@types%2fproj4",
+    "scope": "@types",
+    "rawSpec": "^2.3.2",
+    "saveSpec": null,
+    "fetchSpec": "^2.3.2"
+  },
+  "_requiredBy": [
+    "/bokehjs"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/proj4/-/proj4-2.3.4.tgz",
+  "_shasum": "f388b60209c4cb75ec21a17a4b4ac55a71a58558",
+  "_spec": "@types/proj4@^2.3.2",
+  "_where": "/home/yohoos/Desktop/DjangoProjs/portfolio/npm/node_modules/bokehjs",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Denis Carriere",
+      "url": "https://github.com/DenisCarriere"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "TypeScript definitions for proj4",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/proj4",
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.0",
+  "typesPublisherContentHash": "bd2bbf332e674a2b64d91c02f4d20dddde830a1c8ac2fcd9a178a6391cb28923",
+  "version": "2.3.4"
+}

@@ -130,11 +130,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'npm.finders.NpmFinder'
+    'npm.finders.NpmFinder'
 ]
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOGIN_REDIRECT_URL = 'base:home'
 
 # NPM_ROOT_PATH = '/home/yohoos/Desktop/DjangoProjs/portfolio/npm'
-# NPM_ROOT_PATH = os.path.join(BASE_DIR, 'npm/')
+NPM_ROOT_PATH = os.path.join(BASE_DIR, 'npm/')

@@ -91,7 +91,7 @@ class Urls(models.Model):
     typed_count = models.IntegerField()
     last_visit_time = models.IntegerField()
     hidden = models.IntegerField()
-    favicon_id = models.IntegerField()
+    # favicon_id = models.IntegerField()
 
     class Meta:
         managed = False

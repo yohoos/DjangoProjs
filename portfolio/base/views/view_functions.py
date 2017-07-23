@@ -11,7 +11,7 @@ import pandas as pd
 # Create your views here.
 
 def home(request):
-    return render(request, template_name='base/index.html')
+    return render(request, template_name='client/index.html')
 
 
 class PlotView(View):
