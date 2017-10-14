@@ -1,0 +1,77 @@
+<template>
+  <v-app id="inspire">
+    <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer">
+      <v-toolbar flat class="transparent">
+        <v-list class="pa-0">
+          <v-list-tile avatar>
+            <v-list-tile-avatar>
+              <img src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365" />
+            </v-list-tile-avatar>
+            <v-list-tile-content>
+              <v-list-tile-title>Yuhua Ni</v-list-tile-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-btn icon @click.native.stop="mini = !mini">
+                <v-icon>chevron_left</v-icon>
+              </v-btn>
+            </v-list-tile-action>
+          </v-list-tile>
+        </v-list>
+      </v-toolbar>
+      <v-list class="pt-0" dense>
+        <v-divider></v-divider>
+        <v-list-tile v-for="item in items" :key="item.title" @click="goTo (item.title)">
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <!-- <router-link :to="{ name: item.title, params: {} }">{{ item.title }}</router-link> -->
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar class="orange lighten-2" dark fixed app>
+      <!-- <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon> -->
+      <v-toolbar-title>Portfolio</v-toolbar-title>
+    </v-toolbar>
+    <main>
+      <v-content>
+        <!-- <v-container fill-height> -->
+          <router-view></router-view>
+        <!-- </v-container> -->
+      </v-content>
+    </main>
+    <v-footer class="orange lighten-2" app>
+      <span class="white--text">&copy; 2017</span>
+    </v-footer>
+  </v-app>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      drawer: true,
+      items: [
+        { title: 'Home', icon: 'dashboard' },
+        { title: 'WifiMap', icon: 'assignment' }
+      ],
+      mini: true,
+      right: null
+    }),
+    props: {
+      source: String
+    },
+    methods: {
+      goTo (name) {
+        this.$router.push({ name: name, params: {} })
+      }
+    }
+  }
+</script>
+
+<style>
+  li div a {
+    text-decoration: none;
+  }
+</style>
