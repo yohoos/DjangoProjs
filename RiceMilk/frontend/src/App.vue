@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer">
+    <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer" app>
       <v-toolbar flat class="transparent">
         <v-list class="pa-0">
           <v-list-tile avatar>
@@ -30,7 +30,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="blue lighten-2" dark fixed app>
+    <v-toolbar color='primary' dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Welcome</v-toolbar-title>
     </v-toolbar>
@@ -41,7 +41,7 @@
         <!-- </v-container> -->
       </v-content>
     </main>
-    <v-footer class="blue lighten-2" app>
+    <v-footer color='primary' app>
       <span class="white--text">&copy; 2017</span>
     </v-footer>
   </v-app>
@@ -70,7 +70,7 @@
 </script>
 
 <style>
-  /*li div a {
+  li div a {
     text-decoration: none;
-  }*/
+  }
 </style>
