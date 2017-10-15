@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer" app>
+    <v-navigation-drawer clipped persistent light :mini-variant.sync="mini" v-model="drawer" enable-resize-watcher app>
       <v-toolbar flat class="transparent">
         <v-list class="pa-0">
           <v-list-tile avatar>
@@ -20,7 +20,16 @@
       </v-toolbar>
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
-        <v-list-tile v-for="item in items" :key="item.title" @click="goTo (item.title)">
+        <v-list-tile v-for="item in items.slice(0,1)" :key="item.title" @click="goTo (item.title)">
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile><v-list-tile-content><v-list-tile-title>Projects</v-list-tile-title></v-list-tile-content></v-list-tile>
+        <v-list-tile v-for="item in items.slice(1)" :key="item.title" @click="goTo (item.title)">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -30,7 +39,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color='primary' dark fixed app>
+    <v-toolbar color='primary' clipped-left dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Welcome</v-toolbar-title>
     </v-toolbar>
