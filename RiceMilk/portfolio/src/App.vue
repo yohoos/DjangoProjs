@@ -25,15 +25,14 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <!-- <router-link :to="{ name: item.title, params: {} }">{{ item.title }}</router-link> -->
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="orange lighten-2" dark fixed app>
-      <!-- <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon> -->
-      <v-toolbar-title>Portfolio</v-toolbar-title>
+    <v-toolbar class="blue lighten-2" dark fixed app>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title>Welcome</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-content>
@@ -42,7 +41,7 @@
         <!-- </v-container> -->
       </v-content>
     </main>
-    <v-footer class="orange lighten-2" app>
+    <v-footer class="blue lighten-2" app>
       <span class="white--text">&copy; 2017</span>
     </v-footer>
   </v-app>
@@ -71,7 +70,7 @@
 </script>
 
 <style>
-  li div a {
+  /*li div a {
     text-decoration: none;
-  }
+  }*/
 </style>

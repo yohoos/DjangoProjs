@@ -12,11 +12,58 @@
             <h2>{{ welcome }}</h2>
             <h4><i>{{ profession }}</i></h4>
           </v-flex>
-          <v-flex lg text-lg-center>
-            <p></p>
+          <v-flex lg6>
+            <v-avatar
+              :size="img_width"
+              >
+              <img src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365" alt="My Face" style="">
+            </v-avatar>
           </v-flex>
         </v-layout>
       </v-parallax>
+    </section>
+    <section class="non-parallax">
+      <v-layout
+        column
+        align-center
+        justify-center
+        >
+        <v-flex lg text-lg-center>
+          <h5>Where I've Worked</h5>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap text-xs-center>
+        <v-flex xs12>
+          <v-card dark color="primary">
+            <v-card-text class="px-0">12</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs6 v-for="i in 2" :key="i">
+          <v-card dark class="secondary">
+            <v-card-text class="px-0">6</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs4 v-for="i in 3" :key="i">
+          <v-card dark class="primary">
+            <v-card-text class="px-0">4</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs3 v-for="i in 4" :key="i">
+          <v-card dark class="secondary">
+            <v-card-text class="px-0">3</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs2 v-for="i in 6" :key="i">
+          <v-card dark class="primary">
+            <v-card-text class="px-0">2</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs1 v-for="i in 12" :key="i">
+          <v-card dark class="secondary">
+            <v-card-text class="px-0">1</v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
     </section>
     <section>
       <v-parallax src="/static/images/summer.jpg" height="600">
@@ -45,7 +92,8 @@ export default {
   data () {
     return {
       welcome: 'Yuhua Ni',
-      profession: 'Data Engineer'
+      profession: 'Data Engineer',
+      img_width: '200px'
     }
   }
 }
