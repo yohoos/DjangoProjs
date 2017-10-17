@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'TechPriceViewer',
     'client',
     'home'
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'RiceMilk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
+        'NAME': 'portfolio',
         'USER': 'yohoos',
         'PASSWORD': 'magicdust50',
         'HOST': 'localhost',

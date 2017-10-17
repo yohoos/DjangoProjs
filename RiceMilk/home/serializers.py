@@ -6,4 +6,4 @@ from .models import *
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job
-        fields = '_all__'
+        fields = '__all__'

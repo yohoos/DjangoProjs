@@ -19,7 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    # url(r'^', include('client.urls')),
-    url(r'^', include('home.urls', namespace='home')),
+    url(r'^', include('client.urls')),
+    url(r'^api/', include('home.urls', namespace='home')),
     # url(r'^', include('TechPriceViewer.urls')),
 ]
