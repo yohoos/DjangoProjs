@@ -51,7 +51,7 @@
       </v-content>
     </main>
     <v-footer color='primary' app>
-      <span class="white--text">&copy; 2017</span>
+      <span class="white--text">&copy; 2017. Powered by VueJS and Vuetify</span>
     </v-footer>
   </v-app>
 </template>
@@ -64,7 +64,7 @@
         { title: 'Home', icon: 'dashboard' },
         { title: 'WifiMap', icon: 'assignment' }
       ],
-      mini: true,
+      mini: false,
       right: null
     }),
     props: {

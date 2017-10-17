@@ -1,3 +1,7 @@
+# Ignore intellij stuff
+.idea/
+*.iml
+
 # Ignore some front end stuff
 node_modules/
 
