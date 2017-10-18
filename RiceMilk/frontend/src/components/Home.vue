@@ -6,7 +6,7 @@
           column
           align-center
           justify-center
-          >
+        >
           <v-flex xs text-xs-center>
             <h2>{{ welcome }}</h2>
             <h4><i>{{ profession }}</i></h4>
@@ -14,20 +14,22 @@
           <v-flex md>
             <v-avatar
               :size="img_width"
-              >
-              <img src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365" alt="My Face" style="">
+            >
+              <img
+                src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365"
+                alt="My Face">
             </v-avatar>
           </v-flex>
         </v-layout>
       </v-parallax>
     </section>
-    <!-- <section class="non-parallax">
+    <section class="non-parallax">
       <v-container fluid grid-list-xl>
         <v-layout
           column
           align-center
           justify-center
-          >
+        >
           <v-flex xs text-xs-center>
             <h4>Where I've Worked</h4>
           </v-flex>
@@ -44,10 +46,15 @@
                 </div>
               </v-card-title>
               <v-card-actions>
-                <v-btn href="http://www.google.com" flat color="orange">Website</v-btn>
+                <v-btn :href="current_job.url" flat color="orange">Website</v-btn>
+                <v-btn flat color="red">Change</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
+        </v-layout>
+        <v-divider></v-divider>
+        <v-layout row wrap justify-center text-xs-center>
+          <v-btn dark color="green">Add Job</v-btn>
         </v-layout>
         <v-layout row wrap text-xs-center>
           <v-flex md6 xs12 v-for="job in jobs" :key="job.title">
@@ -62,19 +69,20 @@
               </v-card-title>
               <v-card-actions>
                 <v-btn flat color="orange">Website</v-btn>
+                <v-btn flat color="red">Remove</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
         </v-layout>
       </v-container>
-    </section> -->
+    </section>
     <section>
       <v-parallax src="/static/images/summer.jpg" height="600">
         <v-layout
           column
           align-center
           justify-center
-          >
+        >
           <v-flex lg></v-flex>
           <v-flex lg text-lg-center>
             <h2>{{ welcome }}</h2>
@@ -90,21 +98,30 @@
 </template>
 
 <script>
-export default {
-  name: 'home',
-  data () {
-    return {
-      welcome: 'Yuhua Ni',
-      profession: 'Data Engineer',
-      img_width: '200px',
-      current_job: null,
-      jobs: []
+  import axios from 'axios'
+
+  export default {
+    name: 'home',
+    data: function () {
+      return {
+        welcome: 'Yuhua Ni',
+        profession: 'Data Engineer',
+        img_width: '200px',
+        current_company: 'MITRE Corporation',
+        current_job: { 'title': 'Test' },
+        jobs: [{ 'title': 'Test' }]
+      }
+    },
+    mounted: function () {
+      axios.get('/api/jobs/company/' + this.current_company)
+        .then(response => {
+          this.current_job = response.data
+        })
+        .catch(e => {
+          console.log(e)
+        })
     }
-  },
-  mounted: function () {
-    ;
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

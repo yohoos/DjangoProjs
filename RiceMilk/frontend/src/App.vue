@@ -5,7 +5,8 @@
         <v-list class="pa-0">
           <v-list-tile avatar>
             <v-list-tile-avatar>
-              <img src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365" />
+              <img
+                src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365"/>
             </v-list-tile-avatar>
             <v-list-tile-content>
               <v-list-tile-title>Yuhua Ni</v-list-tile-title>
@@ -28,7 +29,11 @@
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile><v-list-tile-content><v-list-tile-title>Projects</v-list-tile-title></v-list-tile-content></v-list-tile>
+        <v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
         <v-list-tile v-for="item in items.slice(1)" :key="item.title" @click="goTo (item.title)">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -45,9 +50,7 @@
     </v-toolbar>
     <main>
       <v-content>
-        <!-- <v-container fill-height> -->
-          <router-view></router-view>
-        <!-- </v-container> -->
+        <router-view></router-view>
       </v-content>
     </main>
     <v-footer color='primary' app>
@@ -61,8 +64,8 @@
     data: () => ({
       drawer: true,
       items: [
-        { title: 'Home', icon: 'dashboard' },
-        { title: 'WifiMap', icon: 'assignment' }
+        {title: 'Home', icon: 'dashboard'},
+        {title: 'WifiMap', icon: 'assignment'}
       ],
       mini: false,
       right: null
@@ -71,13 +74,12 @@
       source: String
     },
     methods: {
-      goTo (name) {
-        this.$router.push({ name: name, params: {} })
+      goTo: function (name) {
+        this.$router.push({name: name, params: {}})
       }
     }
   }
 </script>
-
 <style>
   li div a {
     text-decoration: none;
