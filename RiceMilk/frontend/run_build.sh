@@ -8,3 +8,4 @@ npm run build
 cp -r ./dist/templates ../
 
 python ../manage.py collectstatic --noinput
+python ../manage.py runserver

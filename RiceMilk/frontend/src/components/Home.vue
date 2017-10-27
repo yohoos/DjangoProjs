@@ -1,19 +1,20 @@
 <template>
   <div>
     <section>
-      <v-parallax src="/static/images/spring.jpg" height="600">
+      <v-parallax src="/static/images/spring.jpg">
         <v-layout
-          column
+          row
+          wrap
           align-center
           justify-center
         >
-          <v-flex xs text-xs-center>
+          <v-flex md6 xs12 text-xs-center>
             <h2>{{ welcome }}</h2>
             <h4><i>{{ profession }}</i></h4>
           </v-flex>
-          <v-flex md>
+          <v-flex md6 xs12 text-xs-center>
             <v-avatar
-              :size="img_width"
+              size="200px"
             >
               <img
                 src="https://avatars2.githubusercontent.com/u/12375128?v=4&s=400&u=44411691244718d092661e0dc4e4a9704c6b5365"
@@ -24,102 +25,136 @@
       </v-parallax>
     </section>
     <section class="non-parallax">
-      <v-container fluid grid-list-xl>
-        <v-layout
-          column
-          align-center
-          justify-center
-        >
-          <v-flex xs text-xs-center>
-            <h4>Where I've Worked</h4>
-          </v-flex>
-        </v-layout>
-        <v-layout row wrap align-center justify-center text-xs-center>
-          <v-flex md6 xs12>
-            <v-card>
-              <v-card-media src="/static/doc-images/cards/desert.jpg" height="200px">
-              </v-card-media>
-              <v-card-title primary-title>
-                <div>
-                  <h3 class="headline mb-0">{{ current_job.title }}</h3>
-                  <div>{{ current_job.description }}</div>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn :href="current_job.url" flat color="orange">Website</v-btn>
-                <v-btn flat color="red">Change</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
-        </v-layout>
-        <v-divider></v-divider>
-        <v-layout row wrap justify-center text-xs-center>
-          <v-btn dark color="green">Add Job</v-btn>
-        </v-layout>
-        <v-layout row wrap text-xs-center>
-          <v-flex md6 xs12 v-for="job in jobs" :key="job.title">
-            <v-card>
-              <v-card-media src="/static/doc-images/cards/desert.jpg" height="200px">
-              </v-card-media>
-              <v-card-title primary-title>
-                <div>
-                  <h3 class="headline mb-0">{{ job.title }}</h3>
-                  <div>{{ job.description }}</div>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat color="orange">Website</v-btn>
-                <v-btn flat color="red">Remove</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
+      <jobs></jobs>
     </section>
     <section>
-      <v-parallax src="/static/images/summer.jpg" height="600">
-        <v-layout
-          column
-          align-center
-          justify-center
+      <v-parallax src="/static/images/summer.jpg">
+        <v-container
+          fluid
+          grid-list-lg
         >
-          <v-flex lg></v-flex>
-          <v-flex lg text-lg-center>
-            <h2>{{ welcome }}</h2>
-            <h4><i>{{ profession }}</i></h4>
-          </v-flex>
-          <v-flex lg text-lg-center>
-            <p></p>
-          </v-flex>
-        </v-layout>
+          <v-layout
+            fill-height
+            row
+            wrap
+            align-center
+            justify-center
+            text-xs-center
+          >
+            <v-flex md6 xs12>
+              <h4>Check me out on LinkedIn</h4>
+              <v-btn color="primary" large href="https://www.linkedin.com/in/yuhuani50/" dark>To LinkedIn and Awaaaay!
+              </v-btn>
+            </v-flex>
+            <v-flex md6 xs12 text-xs-center>
+              <v-avatar
+                tile
+                size="200px"
+              >
+                <img
+                  src="/static/icons/linkedin.png"
+                  alt="My Face">
+              </v-avatar>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-parallax>
+    </section>
+    <section>
+      <tools></tools>
+    </section>
+    <section>
+      <v-parallax src="/static/images/autumn.jpg" :height="height">
+        <v-container
+          fluid
+          grid-list-xl
+        >
+          <v-layout
+            row
+            wrap
+            align-center
+            justify-center
+            fill-height
+          >
+            <v-flex xs12 sm6>
+              <v-card dark class="elevation-0 transparent">
+                <v-card-text class="text-xs-center">
+                  <v-icon x-large class="blue--text text--lighten-2">info</v-icon>
+                </v-card-text>
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline text-xs-center">Feel Free To Look Around</div>
+                </v-card-title>
+                <v-card-text class="subheading">
+                  I will occasionally try out different technologies/frameworks/languages and showcase tutorials or small projects
+                  on this website. You can access those side projects via the side navigation panel. Thank you for visiting!
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm6 class="white--text">
+              <v-card dark class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline text-xs-center">Find Me</div>
+                </v-card-title>
+                <v-list dark class="transparent">
+                  <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon class="blue--text text--lighten-2">email</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>yuhuani50@gmail.com</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                  <v-list-tile @click="redirect()">
+                    <v-list-tile-action>
+                      <v-icon class="blue--text text--lighten-2">code</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>https://github.com/yohoos</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </v-list>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-parallax>
     </section>
   </div>
 </template>
 
 <script>
-  import axios from 'axios'
+  import Jobs from './Jobs'
+  import Tools from './Tools'
 
   export default {
     name: 'home',
+    components: {
+      Jobs,
+      Tools
+    },
     data: function () {
       return {
         welcome: 'Yuhua Ni',
         profession: 'Data Engineer',
-        img_width: '200px',
-        current_company: 'MITRE Corporation',
-        current_job: { 'title': 'Test' },
-        jobs: [{ 'title': 'Test' }]
+        height: '400'
+      }
+    },
+    methods: {
+      redirect: function () {
+        window.location.href = 'https://github.com/yohoos'
+      },
+      setHeight: function (event) {
+        if (event.currentTarget.innerWidth <= 400) {
+          this.height = '700'
+        } else if (event.currentTarget.innnerWidth <= 600) {
+          this.height = '600'
+        } else {
+          this.height = '500'
+        }
       }
     },
     mounted: function () {
-      axios.get('/api/jobs/company/' + this.current_company)
-        .then(response => {
-          this.current_job = response.data
-        })
-        .catch(e => {
-          console.log(e)
-        })
+      window.addEventListener('resize', this.setHeight)
     }
   }
 </script>

@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from rest_framework.exceptions import NotFound
-from django.http import JsonResponse
+from rest_framework.response import Response
 
 from .serializers import *
 
@@ -9,10 +9,26 @@ class JobViewSet(viewsets.ModelViewSet):
     queryset = Job.objects.all()
     serializer_class = JobSerializer
 
-    def get_by_company(self, company=None):
+    def current(self, request):
         try:
-            company = Job.objects.raw('SELECT * FROM home_job WHERE company=%s LIMIT 1', [company])[0]
+            current = Job.objects.raw('SELECT * FROM home_job WHERE current=%s', [True])[0]
         except IndexError:
-            raise NotFound("Company Not Found")
-        serializer = JobSerializer(company)
-        return JsonResponse(serializer.data)
+            raise NotFound("No Current Company Exists. Get a job!")
+        serializer = self.serializer_class(current)
+        return Response(serializer.data)
+
+    def old(self, request):
+        old_jobs = Job.objects.raw('SELECT * FROM home_job WHERE current=%s', [False])
+        serializer = self.serializer_class(old_jobs, many=True)
+        return Response(serializer.data)
+
+
+class CompanyJobViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Job.objects.all()
+    serializer_class = JobSerializer
+    lookup_field = "company"
+
+
+class ToolViewSet(viewsets.ModelViewSet):
+    queryset = Tool.objects.all()
+    serializer_class = ToolSerializer

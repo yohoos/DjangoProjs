@@ -54,7 +54,7 @@
       </v-content>
     </main>
     <v-footer color='primary' app>
-      <span class="white--text">&copy; 2017. Powered by VueJS and Vuetify</span>
+      <span class="white--text">&copy; 2017. Powered by VueJS and Django</span>
     </v-footer>
   </v-app>
 </template>
@@ -65,7 +65,7 @@
       drawer: true,
       items: [
         {title: 'Home', icon: 'dashboard'},
-        {title: 'WifiMap', icon: 'assignment'}
+        {title: 'Coming Soon...', icon: 'assignment'}
       ],
       mini: false,
       right: null
